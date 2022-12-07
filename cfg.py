@@ -1,6 +1,6 @@
-open_key = 'e8e0210a17ad4144fbb46748a8ed53f5'
+open_key = ''
 
-bot_key = '5906611531:AAHcj5BxK_CDuLdYhjSJH9HHZST1I3mxZEM'
+bot_key = ''
 
 weather_api = 'https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&appid=' + open_key + '&units=metric&lang=RU'
 
