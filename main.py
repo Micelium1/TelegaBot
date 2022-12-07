@@ -20,7 +20,7 @@ def commands(message):
 @bot.message_handler(commands=['credits'])
 def credits(message):
     markup = types.InlineKeyboardMarkup()
-    btn1 = types.InlineKeyboardButton(text='Git', url='https://habr.com/ru/all/')
+    btn1 = types.InlineKeyboardButton(text='Git', url='https://github.com/Micelium1/TelegaBot')
     markup.add(btn1)
     bot.send_message(message.from_user.id, "Работа выполнена Артовским Максимом", reply_markup=markup)
 @bot.message_handler(commands=['weather'])
