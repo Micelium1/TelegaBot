@@ -35,7 +35,7 @@ def Get_weather(message):
         try:
             coords = geo_api_use.get_coords(message.text)
             weather = weather_api_use.get_weather(coords)
-            bot.send_message(message.from_user.id, f"Погода в городе {message.text}: \n{weather.weather}\nТемпература: {weather.temperature} градусов Цельсия\nНаправление ветра {weather.wind} м/c")
+            bot.send_message(message.from_user.id, f"Погода в городе {message.text}: \n{weather.weather}\nТемпература: {weather.temperature} градусов Цельсия\nСкорость ветра {weather.wind} м/c")
             text_reading_flag = False
         except Exception:
             bot.send_message(message.from_user.id, "Город либо введен неверно, либо его нету в базе данных")
